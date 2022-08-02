@@ -1,3 +1,4 @@
+<?php session_start();  ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +22,7 @@
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py=3 fixed-top">
         <div class="container">
-            <img class="logo" src="assets/imgs/Randomlogo1.png" />
-            <h2 class="brand">Orange</h2>
+            <img class="logo" src="assets/imgs/certifiredboys/nav-pic.png" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,17 +36,17 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="shop.html">Shop</a>
-                    </li>
+                    </li> -->
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="a">Blog</a>
-                    </li>
+                    </li> -->
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="a">Contact us</a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <i class="fa-solid fa-cart-arrow-down"></i>
@@ -69,13 +69,23 @@
     <section id="home">
         <div class="container">
             <h5>NEW ARRIVALS</h5>
-            <h1><span>Best Prices</span>This Season</h1>
-            <p>Eshop offers the best products for the most affordable prices</p>
-            <button>Shop Now</button>
+            <h1><span></span>Verified Clothing</h1>
+            <p>Certified Boyz Provides Comfortable Street Athleisure Wear For Athletes</p>
+            <a href = "mailto: jordan.stein@hgs.hiddengeniusproject.org" class="email-link">Send Me An Email</a>
+            <!-- <form method="POST" action="mailchimp.php" >
+                <input name= "email" type="text" placeholder="Email Address" style="font-size: 20px; padding-left: 10px; padding-right: 50px;">
+                <!-- <input type="submit" name="submit"> -->
+                <!-- <button name="submit">Go</button> -->
+            <!-- </form> --> 
+           <?php
+            $statusMsg = !empty ($_SESSION['msg'])?$_SESSION['msg']:'';
+            unset($_SESSION['msg']);
+            echo $statusMsg;
+            ?>
         </div>
     </section>
 
-    <!--Brand-->
+    <!-- Brand
     <section id="Brand" class="container">
         <div class="row">
             <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="assets/imgs/Jordan1.png" />
@@ -83,50 +93,22 @@
             <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="assets/imgs/Malcome2.png" />
             <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="assets/imgs/Nike1.png" />
         </div>
-    </section>
+    </section> -->
 
     <!--New-->
-    <section id="new" class="w-100">
-        <div class="row p-0 m-0">
-            <!--One-->
-            <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-                <img class="img-fliud" src="assets/imgs/af1.jpeg" />
-                <div class="details">
-                    <h2>Extreamly Awesome Shoes</h2>
-                    <button class="text-uppercase">Shop Now</button>
-                </div>
-            </div>
-            <!--Two-->
-            <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-                <img class="img-fliud" src="assets/imgs/lvbackpack1.jpeg" />
-                <div class="details">
-                    <h2> Awesome Jacket</h2>
-                    <button class="text-uppercase">Shop Now</button>
-                </div>
-            </div>
-
-            <!--Three-->
-            <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-                <img class="img-fliud" src="assets/imgs/Rolex1.jpeg" />
-                <div class="details">
-                    <h2>50% OFF Watches</h2>
-                    <button class="text-uppercase">Shop Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 
     <!--Featured-->
     <section id="featured" class="my-5 pb-5">
         <div class="container text-center mt-5 py-5">
-            <h3>Our Featured</h3>
+            <h3>Certified Boyz Hoodies Coming Soon</h3>
             <hr class="mx-auto">
-            <p>Here you can check out our featured products</p>
+            <p>Here You Can Check Out The Season 1 Drops </p>
         </div>
         <div class="row mx-auto container-fluid">
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/featured1.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs/certifiredboys/CB1.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -134,12 +116,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Brown & Red Certified Boyz</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/featured4.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs/certifiredboys/CB2.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -147,12 +129,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Black & White Certified Boyz</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/featured2.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs//certifiredboys/CB3.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -160,12 +142,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Brown & Gold Certified Boyz</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/featured3.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs//certifiredboys/CB4.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -173,8 +155,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Red & White Certified Boyz</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
         </div>
@@ -184,22 +166,22 @@
     <!--Banner-->
     <section id="banner">
         <div class="container" class="my-5 py-5">
-            <h4>MID SEASON'S SALE</h4>
-            <h1>Autumn Collection<br>UP to 30% OFF</h1>
-            <button class="text-uppercase">shop now</button>
+            <h4>Certified Boyz</h4>
+            <h1>Season 1<br></h1>
+            <!-- <button class="text-uppercase">shop now</button> -->
         </div>
     </section>
 
     <!--Clothes-->
     <section id="featured" class="my-5">
         <div class="container text-center mt-5 py-5">
-            <h3>Dresses and Coats</h3>
+            <h3>Hoodies</h3>
             <hr class="mx-auto">
-            <p>Here you can check out our amazing clothes</p>
+            <p>Here you can check out more Certified Boyz Hoodies</p>
         </div>
         <div class="row mx-auto container-fluid">
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/Tech2.png" />
+                <img class="img-fluid mb-3" src="assets/imgs//certifiredboys/CB5.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -207,12 +189,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Green & Yellow </h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/Tech4.5.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs//certifiredboys/CB6.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -220,12 +202,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Cream & Black</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/Tech5.5.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs//certifiredboys/CB7.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -233,12 +215,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Black Red & White CB</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid mb-3" src="assets/imgs/Dunk1.8.jpeg" />
+                <img class="img-fluid mb-3" src="assets/imgs//certifiredboys/CB8.png" />
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -246,14 +228,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">$199.8</h4>
+                <h5 class="p-name">Brown & Gold CB</h5>
+                <h4 class="p-price">$80.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
         </div>
     </section>
 
-    <!--Shoes-->
+    <!-- Shoes
     <section id="featured" class="my-5">
         <div class="container text-center mt-5 py-5">
             <h3>Shoes</h3>
@@ -314,9 +296,9 @@
                 <button class="buy-btn">Buy Now</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!--Watches-->
+    <!-- Watches
     <section id="featured" class="my-5">
         <div class="container text-center mt-5 py-5">
             <h3>Best Watches</h3>
@@ -377,7 +359,7 @@
                 <button class="buy-btn">Buy Now</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!--Footer-->

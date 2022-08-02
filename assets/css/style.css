@@ -119,12 +119,12 @@ button:hover{
 }
 
 #home{
-    background-image: url('../imgs/Hoodie3.jpeg');
+    background-image: url('../imgs/certifiredboys/Header5.png');
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
-    background-position-x: 200px;
-    background-position-y: 80px;
+    background-position-x: 150px;
+    background-position-y: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,11 +133,26 @@ button:hover{
 }
 
 #home span{
-    color: coral
+color: coral
 } 
+#home h5{
+color:#fff;
+}
+
+#home h1{
+    color: #fff;
+}
+
+#home p{
+    color: #fff;
+}
+
+#home div input{
+    font-size: 30px;
+}
 
 #new .one img{
-    width: 100%;
+    width: 100%
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,9 +257,9 @@ hr{
 }
 
 #banner{
-    background-image: url('../imgs/KxJ2.jpeg');
+    background-image: url('../imgs//certifiredboys/Header4.png');
     width: 100%;
-    height: 60vh;
+    height: 120vh;
     background-size: cover;
     background-position-x: center;
     background-position-y: 80px;
@@ -326,7 +341,7 @@ footer .copyright img{
 }
 
 .logo{
-    width: 40px;
+    width: 60px;
     height: 40px;
 }
 
@@ -555,4 +570,10 @@ th:last-child{
     width: 80px;
     height: 80px;
     margin-right: 10px;
+}
+.email-link{
+    color:white;
+    font-weight: 700;
+    font-size:20px;
+
 }

@@ -41,8 +41,7 @@
  <!--NavBar-->
  <nav class="navbar navbar-expand-lg navbar-light bg-white py=3 fixed-top">
     <div class="container">
-       <img class="logo" src="assets/imgs/Randomlogo1.png" />
-       <h2 class="brand">Orange</h2>
+       <img class="logo" src="assets/imgs/certifiredboys/nav-pic.png" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -56,17 +55,17 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="shop.html">Shop</a>
-                </li>
+                </li> -->
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="a">Blog</a>
-                </li>
+                </li> -->
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="a">Contact us</a>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <i class="fa-solid fa-cart-arrow-down"></i>
@@ -84,7 +83,7 @@
 </nav>
 
 <!--Featured-->
-<section id="featured" class="my-5 py-5">
+<!-- <section id="featured" class="my-5 py-5">
     <div class="container  mt-5 py-5">
         <h3>Our Products</h3>
         <hr>
@@ -99,8 +98,8 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Sports Shoes</h5>
+            </div> -->
+            <!-- <h5 class="p-name">Sports Shoes</h5>
             <h4 class="p-price">$199.8</h4>
             <button class="buy-btn">Buy Now</button>
         </div>
@@ -311,7 +310,7 @@
         </nav>
 
     </div>
-</section>
+</section> -->
 
 
 <!--Footer-->
